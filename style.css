@@ -1,0 +1,101 @@
+@font-face {
+    font-family: "bodyfont";
+    src: url("fonts/Sekuya/Sekuya-Regular.ttf");
+
+}
+
+@font-face {
+    font-family: "navfont";
+    src: url("font2/EB_Garamond/EBGaramond-Italic-VariableFont_wght.ttf");
+
+}
+
+/*fonts → 資料夾
+Sekuya → 裡面的子資料夾
+Sekuya-Regular.ttf → 真正的字體檔*/
+/*像俄羅斯套娃的概念 想要哪種字體就去資料夾找他的檔名*/
+
+
+
+
+
+body{
+     background-color: #B4D4BF;
+}
+
+h1{
+    color: white;
+    font-family: "bodyfont", system-ui;
+    text-align: center;
+   
+    
+    height: 20vh;
+    margin: 0;
+    font-size: 6.5vh;
+}
+
+
+
+figure > img {
+    width: 60vh;
+    margin: 0;
+    height: 80vh;
+    margin-right: 60%;
+    border-radius: 10vh;
+}
+
+
+nav, nav a{
+    color:white;
+    font-family:"bodyfont", serif; /*serif是字體有小尾巴*/
+    font-size: 3.5vh;
+}
+nav {
+    /*
+        Explanation:
+            1. position: fixed removes the element from the normal document flow.
+            2. Its position is relative to the viewport, not to <article>.
+            3. top: 0 puts it at the top edge of the viewport.
+    */
+   /*top: 10vh;*/
+    position: fixed;
+    top:0;
+    left:90vw;
+    /*width: 80%;
+    /*margin-left: 10%;*/
+    background-color: #333182;
+}
+
+nav a > nav:hover{
+    color: #D6D5E8;
+    opacity: 0.8;
+}
+
+nav > p:not(:first-of-type) {
+   display: none;
+}
+
+nav > p:first-of-type{
+    cursor: pointer;
+}
+
+padding:;
+
+/*nav {
+   
+    position: fixed;
+    top: 10vh;
+    background-color: #dimgray;
+    opacity: 0.8; /*透明度*/
+    /*margin-left: 0;
+    line-height: 4.4vh;
+    height: 0vh;
+    width: 100%;
+    
+}*/
+
+
+
+   
+
+        
